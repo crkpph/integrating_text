@@ -1,0 +1,45 @@
+#!/bin/bash
+
+rosdep install sound_play
+
+rosmake sound_play
+
+wget --no-check-certificate 'https://docs.google.com/uc?authuser=0&id=0B_9Ln-jNh7yocXF2ak45ZlZfNG8&export=download'  -O sound_edit --user-agent 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22(KHTML, like Gecko) Ubuntu Chromium/25.0.1364.160 Chrome/25.0.1364.160 Safari/537.22'
+
+wget --no-check-certificate 'https://docs.google.com/uc?authuser=0&id=0B_9Ln-jNh7yoS2ljd0sxOFlNMlU&export=download'  -O start_sound --user-agent 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22(KHTML, like Gecko) Ubuntu Chromium/25.0.1364.160 Chrome/25.0.1364.160 Safari/537.22'
+
+wget --no-check-certificate 'https://docs.google.com/uc?authuser=0&id=0B_9Ln-jNh7yodWR4QUpLdF9LMDQ&export=download'  -O start_ros --user-agent 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22(KHTML, like Gecko) Ubuntu Chromium/25.0.1364.160 Chrome/25.0.1364.160 Safari/537.22'
+
+wget --no-check-certificate 'https://docs.google.com/uc?authuser=0&id=0B_9Ln-jNh7yobDJNczdlVmtPSzg&export=download'  -O terminal_exit --user-agent 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22(KHTML, like Gecko) Ubuntu Chromium/25.0.1364.160 Chrome/25.0.1364.160 Safari/537.22'
+
+
+sudo mv sound_edit /bin/
+
+sudo mv start_sound /bin/
+
+sudo mv start_ros /bin/
+
+sudo mv terminal_exit /bin/
+
+cd /bin/
+
+chmod 755 sound_edit
+
+chmod 755 start_sound
+
+chmod 755 start_ros
+
+chmod 755 terminal_exit 
+
+cd ..
+
+
+
+
+
+
+
+
+
+
+
