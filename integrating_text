@@ -1,0 +1,42 @@
+#!/bin/bash
+
+rosdep install sound_play
+
+rosmake sound_play
+
+git clone https://github.com/crkpph/script
+
+cd /script/
+
+sudo mv sound_edit /bin/
+
+sudo mv start_sound /bin/
+
+sudo mv start_ros /bin/
+
+sudo mv terminal_exit /bin/
+
+cd ..
+
+cd /bin/
+
+chmod 755 sound_edit
+
+chmod 755 start_sound
+
+chmod 755 start_ros
+
+chmod 755 terminal_exit 
+
+cd ..
+
+
+
+
+
+
+
+
+
+
+
